@@ -5,7 +5,6 @@
     padding: 0;
     font-family: 'League Spartan', sans-serif;
     font-weight: 700;
-    /* transition: .3s; */
 }
 
 body {
@@ -21,15 +20,11 @@ body {
 
 .calculator {
     background-color: hsl(222, 26%, 31%);
-    /* border: 1px solid #ccc;
-    padding: 10px;
-    max-width: 320px;
-    margin: 0 auto;*/
     color: white;
 }
 
 .container {
-    min-width: 315px;
+    min-width: 310px;
     width: 28%;
 }
 
@@ -49,7 +44,6 @@ header .themebox {
     width: 50px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center/; */
     align-items: center;
     letter-spacing: 2px;
     gap: 3px;
@@ -69,7 +63,6 @@ header .theme-container .themeselector {
     align-items: center;
     padding: 0 5px;
     border-radius: 20px;
-    /* position: relative; */
 }
 
 .themeselector .ball {
@@ -79,24 +72,14 @@ header .theme-container .themeselector {
     border-radius: 50%;
 }
 
-
-/* 
-.calculator h1 {
-    color: white;
-    text-align: center;
-    margin-top: 0;
-} */
-
 .calculator input[type="text"] {
     width: 100%;
     height: 100px;
     padding: 20px 10px;
     margin-top: 30px;
     text-align: end;
-    /* margin: 50px 0; */
     background: hsl(224, 36%, 15%);
     font-size: 42px;
-    /* font-weight: 700; */
     border: none;
     border-radius: 10px;
     color: white;
@@ -108,27 +91,28 @@ header .theme-container .themeselector {
     border-radius: 10px;
     border: none;
     font-size: 22px;
-    /*  padding: 10px;*/
     margin-bottom: 20px;
 }
 
 .btn {
     font-size: 32px !important;
+    box-shadow: 0 4px 5px -2px hsl(28, 16%, 65%);
 }
 
 .bigbtn1,
 .bigbtn2 {
-    /* font-size: 24px; */
     width: 47%!important;
 }
 
 .delbtn,
 .bigbtn1 {
+    box-shadow: 0 4px 5px -2px hsl(224, 28%, 35%);
     color: white;
     background-color: hsl(222, 26%, 31%);
 }
 
 .bigbtn2 {
+    box-shadow: 0 4px 5px -2px hsl(6, 70%, 34%);
     color: white;
     background-color: hsl(6, 63%, 50%);
 }
@@ -138,7 +122,6 @@ header .theme-container .themeselector {
     width: 100%;
     display: flex;
     padding: 27px 27px 0 27px;
-    /*  gap: 10px;*/
     justify-content: space-between;
     flex-wrap: wrap;
     border-radius: 10px;
@@ -176,20 +159,23 @@ header .theme-container .themeselector {
 }
 
 .calculator.dark .btn {
-    background-color: hsl(281, 89%, 26%);
+    background-color: rgb(51, 27, 77);
     color: #fff;
     border-color: #777;
+    box-shadow: 0 4px 5px -2px rgb(133, 28, 157);
 }
 
 .calculator.dark .delbtn,
 .calculator.dark .bigbtn1 {
     color: white;
-    background-color: hsl(268, 47%, 21%);
+    background-color: rgb(86, 7, 124);
+    box-shadow: 0 4px 5px -2px rgb(191, 22, 245);
 }
 
 .calculator.dark .bigbtn2 {
     color: black;
-    background-color: hsl(176, 100%, 44%);
+    background-color: rgb(0, 222, 207);
+    box-shadow: 0 4px 5px -2px rgb(110, 250, 241);
 }
 
 
