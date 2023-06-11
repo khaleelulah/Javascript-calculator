@@ -1,0 +1,241 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    /* transition: .3s; */
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/*Default theme */
+
+.calculator {
+    background-color: hsl(222, 26%, 31%);
+    /* border: 1px solid #ccc;
+    padding: 10px;
+    max-width: 320px;
+    margin: 0 auto;*/
+    color: white;
+}
+
+.container {
+    min-width: 315px;
+    width: 28%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .theme-container {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+header .themebox {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center/; */
+    align-items: center;
+    letter-spacing: 2px;
+    gap: 3px;
+}
+
+h2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 2%;
+}
+
+header .theme-container .themeselector {
+    width: 100%;
+    background: hsl(224, 36%, 15%);
+    height: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    border-radius: 20px;
+    /* position: relative; */
+}
+
+.themeselector .ball {
+    background-color: hsl(6, 63%, 50%);
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+}
+
+
+/* 
+.calculator h1 {
+    color: white;
+    text-align: center;
+    margin-top: 0;
+} */
+
+.calculator input[type="text"] {
+    width: 100%;
+    height: 100px;
+    padding: 20px 10px;
+    margin-top: 30px;
+    text-align: end;
+    /* margin: 50px 0; */
+    background: hsl(224, 36%, 15%);
+    font-size: 42px;
+    /* font-weight: 700; */
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.calculator input[type="button"] {
+    width: 21%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 22px;
+    /*  padding: 10px;*/
+    margin-bottom: 20px;
+}
+
+.btn {
+    font-size: 32px !important;
+}
+
+.bigbtn1,
+.bigbtn2 {
+    /* font-size: 24px; */
+    width: 47%!important;
+}
+
+.delbtn,
+.bigbtn1 {
+    color: white;
+    background-color: hsl(222, 26%, 31%);
+}
+
+.bigbtn2 {
+    color: white;
+    background-color: hsl(6, 63%, 50%);
+}
+
+.calculator .keypad {
+    background: hsl(224, 36%, 15%);
+    width: 100%;
+    display: flex;
+    padding: 27px 27px 0 27px;
+    /*  gap: 10px;*/
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    margin-top: 22px;
+}
+
+
+/* Dark theme */
+
+.calculator.dark {
+    background-color: hsl(268, 75%, 9%);
+    color: hsl(52, 100%, 62%);
+}
+
+.calculator.dark .themeselector {
+    justify-content: center;
+}
+
+.calculator.dark h1 {
+    color: hsl(52, 100%, 62%);
+}
+
+.calculator.dark input[type="text"] {
+    background-color: hsl(268, 71%, 12%);
+    color: #fff;
+    border-color: #555;
+}
+
+.calculator.dark .ball {
+    background-color: hsl(176, 100%, 44%);
+}
+
+.calculator.dark .keypad {
+    background: hsl(268, 71%, 12%);
+}
+
+.calculator.dark .btn {
+    background-color: hsl(281, 89%, 26%);
+    color: #fff;
+    border-color: #777;
+}
+
+.calculator.dark .delbtn,
+.calculator.dark .bigbtn1 {
+    color: white;
+    background-color: hsl(268, 47%, 21%);
+}
+
+.calculator.dark .bigbtn2 {
+    color: black;
+    background-color: hsl(176, 100%, 44%);
+}
+
+
+/* Light theme */
+
+.calculator.light .ball {
+    background-color: hsl(6, 63%, 50%);
+    ;
+}
+
+.calculator.light {
+    background-color: hsl(0, 0%, 90%);
+    color: black;
+}
+
+.calculator.light .themeselector {
+    justify-content: end;
+}
+
+.calculator.light h1 {
+    color: black;
+}
+
+.calculator.light input[type="text"] {
+    background-color: hsl(0, 0%, 93%);
+    color: black;
+    border-color: #ccc;
+}
+
+.calculator.light .btn {
+    background-color: hsl(0, 0%, 93%);
+    color: #333;
+    border-color: #999;
+}
+
+.calculator.light .delbtn,
+.calculator.light .bigbtn1 {
+    color: white;
+    background-color: hsl(185, 42%, 37%);
+}
+
+.calculator.light .bigbtn2 {
+    color: white;
+    background-color: hsl(6, 63%, 50%);
+}
+
+.calculator.light .keypad {
+    background-color: hsl(0, 5%, 81%);
+}

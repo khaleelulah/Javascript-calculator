@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="calculator">
+    <div class="container">
+        <header>
+            <h1>calc</h1>
+            <div class="theme-container">
+                <h2>theme</h2>
+                <div class="themebox">
+                    <span>1 2 3</span>
+                    <span class="themeselector" onclick="toggleTheme()">
+                        <span class="ball"></span>
+                    </span>
+                </div>
+            </div>
+        </header>
+        <input type="text" id="result" readonly>
+        <div class="keypad">
+            <input class="btn" type="button" value="7" onclick="appendToResult('7')">
+            <input class="btn" type="button" value="8" onclick="appendToResult('8')">
+            <input class="btn" type="button" value="9" onclick="appendToResult('9')">
+            <input class="delbtn" type="button" value="DEL" onclick="removeLast()">
+            <!-- <br> -->
+            <input class="btn" type="button" value="4" onclick="appendToResult('4')">
+            <input class="btn" type="button" value="5" onclick="appendToResult('5')">
+            <input class="btn" type="button" value="6" onclick="appendToResult('6')">
+            <input class="btn" type="button" value="+" onclick="appendToResult('+')">
+            <!-- <br> -->
+            <input class="btn" type="button" value="1" onclick="appendToResult('1')">
+            <input class="btn" type="button" value="2" onclick="appendToResult('2')">
+            <input class="btn" type="button" value="3" onclick="appendToResult('3')">
+            <input class="btn" type="button" value="-" onclick="appendToResult('-')">
+
+
+
+            <!-- <br> -->
+            <input class="btn" type="button" value="0" onclick="appendToResult('0')">
+            <input class="btn" type="button" value="." onclick="appendToResult('.')">
+            <input class="btn" type="button" value="/" onclick="appendToResult('/')">
+            <input class="btn" type="button" value="*" onclick="appendToResult('*')">
+            <!-- <br> -->
+            <input class="bigbtn1" type="button" value="=" onclick="calculateResult()">
+            <input class="bigbtn2" type="button" value="Reset" onclick="clearResult()">
+
+            <!-- <input type="button" value="Toggle Theme" onclick="toggleTheme()"> -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
